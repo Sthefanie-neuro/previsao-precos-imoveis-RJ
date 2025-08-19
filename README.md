@@ -40,8 +40,14 @@ O fluxo de trabalho desenvolvido no notebook segue as seguintes etapas:
     git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
     ```
 2.  **Ambiente:** Abra o notebook `Spark_previsao_imoveis.ipynb` em um ambiente compatível, como o Google Colab.
-3.  **Dataset:** Faça o upload do arquivo de dados (`dataset.csv`) para o ambiente de execução.
-4.  **Execução:** Execute as células do notebook em sequência.
+
+3.  **Dataset:** Faça o upload do arquivo de dados compactado (`imoveis.zip`) para a pasta raiz do ambiente de execução do Colab.
+
+4.  **Descompactar os Dados:** Crie uma nova célula no início do seu notebook e execute o seguinte comando para extrair o arquivo JSON.
+    ```bash
+    !unzip dados_imoveis.zip
+    ```
+5.  **Execução:** Após descompactar o arquivo, execute as células do notebook em sequência. Certifique-se de que o caminho de leitura dos dados no código corresponde ao nome do arquivo JSON extraído.
 
 ## 📈 Resultados
 
